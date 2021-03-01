@@ -1,0 +1,6 @@
+CREATE TABLE tb_receita
+(
+  codigo BIGSERIAL PRIMARY KEY,
+  descricao VARCHAR(100) NOT NULL UNIQUE,
+  ativo BOOLEAN
+);
