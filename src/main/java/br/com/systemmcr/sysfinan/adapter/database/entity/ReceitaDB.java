@@ -1,6 +1,5 @@
 package br.com.systemmcr.sysfinan.adapter.database.entity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 import javax.persistence.*;

@@ -6,7 +6,6 @@ import br.com.systemmcr.sysfinan.port.ReceitaPort;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import javax.ws.rs.core.Response;
 
 @ApplicationScoped
 public class ReceitaFindByIdUseCaseImpl implements ReceitaFindByIdUseCase {
