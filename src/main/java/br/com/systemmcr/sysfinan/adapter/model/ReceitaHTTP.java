@@ -1,11 +1,15 @@
 package br.com.systemmcr.sysfinan.adapter.model;
 
+import javax.validation.constraints.NotBlank;
 import java.util.Objects;
 
 public class ReceitaHTTP {
 
     private Long codigo;
+
+    @NotBlank(message = "A descrição é obrigatória, não deve ser vazia ou nula!")
     private String descricao;
+
     private Boolean ativo;
 
     public ReceitaHTTP() {

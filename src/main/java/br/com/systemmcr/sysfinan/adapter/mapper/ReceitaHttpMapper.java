@@ -21,9 +21,9 @@ public class ReceitaHttpMapper extends FromToMapper<ReceitaHTTP, ReceitaEntity> 
     @Override
     protected ReceitaEntity toNonNull(ReceitaHTTP receitaHTTP) {
         ReceitaEntity receitaEntity = new ReceitaEntity();
-        receitaEntity.setCodigo(receitaEntity.getCodigo());
-        receitaEntity.setDescricao(receitaEntity.getDescricao());
-        receitaEntity.setAtivo(receitaEntity.getAtivo());
+        receitaEntity.setCodigo(receitaHTTP.getCodigo());
+        receitaEntity.setDescricao(receitaHTTP.getDescricao());
+        receitaEntity.setAtivo(receitaHTTP.getAtivo());
         return receitaEntity;
     }
 }

@@ -34,4 +34,21 @@ public class ReceitaPortImpl implements ReceitaPort {
         ReceitaDB receitaDB = ReceitaDB.findById(codigo);
         return mapper.to(receitaDB);
     }
+
+    @Override
+    public ReceitaEntity findByDescricao(String descricao) {
+        ReceitaDB receitaDB = repository.findByDescricao(descricao);
+        return mapper.to(receitaDB);
+    }
+
+    @Override
+    public ReceitaEntity createOrUpdate(ReceitaEntity receitaEntity) {
+        ReceitaDB receitaDB = repository.createOrUpdate(mapper.from(receitaEntity));
+        return mapper.to(receitaDB);
+    }
+
+    @Override
+    public void deleteById(Long codigo) {
+        repository.delete(codigo);
+    }
 }

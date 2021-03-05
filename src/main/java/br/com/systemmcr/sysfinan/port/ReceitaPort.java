@@ -9,4 +9,7 @@ public interface ReceitaPort {
     List<ReceitaEntity> findAll();
     List<ReceitaEntity> findByStatusTrue();
     ReceitaEntity findById(Long codigo);
+    ReceitaEntity findByDescricao(String descricao);
+    ReceitaEntity createOrUpdate(ReceitaEntity receitaEntity);
+    void deleteById(Long codigo);
 }
